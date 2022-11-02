@@ -1,0 +1,50 @@
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header{
+    background-color: peru;
+    text-align: center;
+    padding: 10px;
+}
+
+#header h1{
+    color: antiquewhite;
+
+}
+#header blockquote{
+    background-color: antiquewhite;
+    border: 1px dotted black;
+}
+
+/* untuk  ubah style menu */
+.menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+/* untuk ubah style gambar */
+.gambar{
+    text-align: center;
+}
+.gambar img{
+    width: 20%;
+    padding: 20px;
+}
+/* ubah style koleksi */
+.koleksi{
+    text-align: center;
+
+}
+.koleksi img{
+    width: 20%;
+    padding: 20px;
+}
+.promo{
+    text-align: center;
+    color: brown;
+}
