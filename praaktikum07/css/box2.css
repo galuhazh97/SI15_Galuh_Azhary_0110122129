@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    background-color: azure;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.container img{
+    width: 200px;
+}

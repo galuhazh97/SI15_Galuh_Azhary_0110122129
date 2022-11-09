@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.kotak{
+    border: 3px solid black ;
+    width: 200px;
+    height: 700px
+
+}
+.item-1{
+    background-color:  #f2d230;
+}
+.item-2{
+    background-color:  #d9a91a;
+}
+.item-3{
+    background-color:  #bf7e04;
+}
+.item-4{
+    background-color:  #a65d03;
+}
