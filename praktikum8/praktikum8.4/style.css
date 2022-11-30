@@ -1,0 +1,41 @@
+body{
+    background-color: palevioletred;
+   
+}
+header, footer, main{
+    margin: 15px auto;
+    margin-left: 15px auto;
+    width: 1600px;
+    
+    
+}
+header, footer{
+    background-color: paleturquoise;
+    height: 100px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+}
+aside{
+    background-color: pink;
+    margin-right: 15px ;
+    width: 600px;
+}
+
+article{
+    background-color: plum;
+    width: 1000px;
+}
+
+img{
+    width: 200px;
+    margin-top: 450px;
+    margin-left: 100px;
+    justify-content: space-between;
+}
+
+p{
+    align-items: center;
+}
