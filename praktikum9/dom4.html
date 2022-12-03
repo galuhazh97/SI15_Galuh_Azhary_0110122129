@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praktikum9.4</title>
+</head>
+<body>
+    <h2>Pertambahan dua bilangan</h2>
+    <form action="">
+        <input type="number" name="" id="angka1"> 
+        <p>+</p>
+        <input type="number" name="" id="angka2" onchange="pertambahan();">
+        <p>=</p>
+        <input type="number" id="hasil" >
+    </form>
+    <script>
+        function pertambahan(){
+            //tangkap angka pertama
+            let a1 = document.getElementById("angka1").value;
+            //tangkap angka kedua
+            let a2 = document.getElementById("angka2").value;
+            //tangkap hasil
+            let h =  parseInt (a1) + parseInt(a2);
+            document.getElementById("hasil").value = h;
+
+        }
+    </script>
+
+</body>
+</html>

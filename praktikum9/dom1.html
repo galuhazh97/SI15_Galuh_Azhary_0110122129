@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menghitung Luas dan Keliling Lingkaran</h1>
+    <!-- buat tag kosong -->
+    <span id="pi"></span>
+    <br>
+    <span id="jari"></span>
+    <br>
+    <span id="luas"></span>
+    <br>
+    <span id="keliling"></span>
+
+    <!-- kode JavaScript -->
+    <script>
+        const pi = 3.14;
+        //bikin variabel r dengan nilai 14
+        let r = 14;
+
+        let L = pi * (r * r);
+
+        let K = pi * (2*r);
+
+        //menangkap elemen id dan menangkap kontennya
+        //conts untuk hal yang tetap tidak bisa diubah
+        //let untuk hal yang bisa diubah
+        document.getElementById("pi").innerHTML = "phi :"+ pi;
+
+        document.getElementById("jari").innerHTML = "jari - jari :"+ r;
+
+        document.getElementById("luas").innerHTML = "Luas lingkaran :"+ L;
+
+        document.getElementById("keliling").innerHTML = "keliling lingkaran :"+ K;
+    </script>
+</body>
+</html>
