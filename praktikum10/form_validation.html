@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        fieldset{
+            width: 30%;
+            height: 500px;
+            margin-left: 450px;
+            box-shadow: 2px 2px 20px #333;
+            border-radius: 1em;
+            background-color: rgb(219, 208, 208);
+        }
+        body {
+            font-family: sans-serif;
+        }
+ 
+        label {
+            font-size: 10pt;
+        }
+ 
+        input{
+            padding: 8px;
+            width: 95%;
+            background: #efefef;
+            border: 0;
+            font-size: 10pt;
+            margin: 6px 0px;
+        }
+        div{
+            margin-top: 20px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend align="center">Form Validation</legend>
+        <form onsubmit="form()">
+            <div>
+                <label for="">Nama Pelanggan <sup>*</sup> </label><br>
+                <input type="text" maxlength="30" name="" id="nama" placeholder="Nama" required>
+            </div>
+            <div>
+                <label for="">Email  <sup>*</sup> </label>
+                <input type="email" name="" id="email"  placeholder="youremail@gmail.com" required>
+            </div>
+            <div>
+                <label for="">Tujuan Keberangkatan  <sup>*</sup> </label>
+                <input type="text" name="" id="tujuan"  placeholder="Tujuan" required>
+            </div>
+            <div>
+                <label for="">Jam Keberangkatan <sup>*</sup> </label>
+                <input type="time" name="" id="jam"  required>
+            </div>
+            <div>
+                <label for="">Jumlah Tiket <sup>*</sup> </label>
+                <input type="number" min="1" max="10" name="" id="tiket" placeholder="1 - 10" required>
+            </div>
+            <div>
+                <button type="submit" >Submit</button>
+            </div>
+        </form>
+    </fieldset>
+    <br>
+   
+    </fieldset>
+    
+    <script>
+        function form(){
+            let nama = document.getElementById("nama");
+            let email = document.getElementById("email");
+            let tujuan = document.getElementById("tujuan");
+            let jam = document.getElementById("jam");
+            let tiket = document.getElementById("tiket");
+            let button = document.getElementsByTagName("button");
+           
+            document.write("<fieldset>")
+            document.write("<p>Nama :</p>"+nama.value);
+            document.write("<p>Email:</p>"+ email.value);
+            document.write("<p>Tujuan Keberangkatan :</p>"+tujuan.value);
+            document.write("<p>Jam Keberangkatan :</p>"+jam.value);
+            document.write("<p>Tiket :</p>" +tiket.value);
+            document.write("</fieldset>")
+            }
+
+         
+        
+
+
+
+            
+//maap banget kak udh mentok
+    </script>
+</body>
+</html>

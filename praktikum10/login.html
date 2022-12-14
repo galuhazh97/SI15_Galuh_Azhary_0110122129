@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="form"  onsubmit="kirim()">
+        Username: <input type="text" id="username">
+        <br>
+        Password: <input type="password" id="password">
+        <br>
+        <button type="submit">Login</button>
+        <p>username dan password yang benar</p>
+        <p>Username : admin</p>
+        <p>password : intergrity</p>
+    </form>
+   <script>
+        //buat fungsi
+        function kirim(){
+            //buat variabel untuk simpan inputan
+            let nama = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+            //simpan hak akses element form ke variabel form
+            let form = document.getElementById("form");
+
+            //buat logic
+            if(nama == "admin" && pass == "intergrity")  {
+                form.setAttribute("action","dasboard.html")
+                window.alert("Login Berhasil")
+            } else {
+                window.alert("Login Gagal")
+            }
+        }
+   </script>
+</body>
+</html>
